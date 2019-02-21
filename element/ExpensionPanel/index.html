@@ -1,0 +1,152 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Expansion panels</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet" />
+           <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+
+    
+    </head>
+    <body>
+
+        <div class="panel">
+            <h5>PREMIUM SUMMARY</h5>
+            <details>
+                <summary>
+                    <ul>
+                        <li class="titleName">Department And Month Wise</li>
+                        <li class="titleValue"> Caribbean cruise</li>
+                        <li></li>
+                    </ul>
+                </summary>
+                <div class="content">
+                    <h5>Default Paramaters</h5>
+                    <form action="#">
+                        <p>
+                            <label>
+                              <input type="checkbox" checked="checked" />
+                              <span>Send Daily report</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox"  />
+                              <span>Send Weekly report</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" checked="checked" />
+                              <span>Send Monthly report</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox"  />
+                              <span>Send Quaterly report</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox"  />
+                              <span>Send Yearly report</span>
+                            </label>
+                          </p>
+                                   
+                    </form>
+                    <h5>Custom Parameter</h5>
+                       
+                    <div class="row">
+                            <div class="col l4 m4 s12">
+                                    <input type="text" class="datepicker" placeholder="From Date">
+                            </div>
+                            <div class="col l4 m4 s12">
+                                    <input type="text" class="datepicker" placeholder="To Date">
+                            </div>
+                            <div class="col l4 m4 s12">
+                                    <input type="text" class="datepicker" placeholder="Email sent DateTime">
+                            </div>
+                    </div>
+
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <ul>
+                        <li>Location</li>
+                        <li class="titleValue">Barbados</li>
+                        <li></li>
+                    </ul>
+                </summary>
+                <div class="content">
+                    <p>Result not found</p>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <ul>
+                        <li>Start and end dates</li>
+                        <li class="titleValue"><time>Start Date:</time> Feb 29,
+                            2016</li>
+                        <li class="titleValue"><time>End Date:</time> Not set</li>
+                    </ul>
+                </summary>
+                <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas.</p>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <ul>
+                        <li>Carrier</li>
+                        <li class="titleValue">The best cruise lines</li>
+                        <li class="titleValue"></li>
+                    </ul>
+                </summary>
+                <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas.</p>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <ul>
+                        <li>Meal Preference <span>Optional</span></li>
+                        <li class="titleValue">Vegetarian</li>
+                        <li class="titleValue"></li>
+                    </ul>
+                </summary>
+                <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas.</p>
+                </div>
+            </details>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+          
+          </script>
+
+    </body>
+</html>
