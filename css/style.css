@@ -72,12 +72,12 @@
         }
 
         summary{
-            outline:none;
+            outline: none;
             cursor: pointer;
-            padding: 16px 24px;
-            color:#212121;
+            padding: 10px 18px;
+            color: #212121;
             position: relative;
-            font-size: 15px;
+            font-size: 12px;
             transition: ease-in-out 0.2s;
             border-bottom: #d1d1d1 1px solid;
         }

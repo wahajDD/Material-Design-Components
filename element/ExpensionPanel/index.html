@@ -1,152 +1,405 @@
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Expansion panels</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-        <link href="../../css/style.css" rel="stylesheet" />
-           <!-- Compiled and minified CSS -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Expansion panels</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet" />
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="../../css/materialize.min.css">
 
-    
-    </head>
-    <body>
 
-        <div class="panel">
-            <h5>PREMIUM SUMMARY</h5>
-            <details>
-                <summary>
-                    <ul>
-                        <li class="titleName">Department And Month Wise</li>
-                        <li class="titleValue"> Caribbean cruise</li>
-                        <li></li>
-                    </ul>
-                </summary>
-                <div class="content">
-                    <h5>Default Paramaters</h5>
-                    <form action="#">
-                        <p>
-                            <label>
-                              <input type="checkbox" checked="checked" />
-                              <span>Send Daily report</span>
-                            </label>
-                          </p>
-                          <p>
-                            <label>
-                              <input type="checkbox"  />
-                              <span>Send Weekly report</span>
-                            </label>
-                          </p>
-                          <p>
-                            <label>
-                              <input type="checkbox" checked="checked" />
-                              <span>Send Monthly report</span>
-                            </label>
-                          </p>
-                          <p>
-                            <label>
-                              <input type="checkbox"  />
-                              <span>Send Quaterly report</span>
-                            </label>
-                          </p>
-                          <p>
-                            <label>
-                              <input type="checkbox"  />
-                              <span>Send Yearly report</span>
-                            </label>
-                          </p>
-                                   
-                    </form>
-                    <h5>Custom Parameter</h5>
-                       
-                    <div class="row">
-                            <div class="col l4 m4 s12">
-                                    <input type="text" class="datepicker" placeholder="From Date">
-                            </div>
-                            <div class="col l4 m4 s12">
-                                    <input type="text" class="datepicker" placeholder="To Date">
-                            </div>
-                            <div class="col l4 m4 s12">
-                                    <input type="text" class="datepicker" placeholder="Email sent DateTime">
-                            </div>
+</head>
+<body>
+
+    <div class="panel">
+        <h6>REPORT AUTO-GENERATOR</h6>
+        <details>
+            <summary>
+                <ul>
+                    <li class="titleName">Premium Summary</li>
+                    <li class="titleValue"> Department And Month Wise</li>
+                    <li></li>
+                </ul>
+            </summary>
+            <div class="content">
+                <h6>Default Settings</h6>
+                <form action="#">
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Daily report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Weekly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Monthly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Quaterly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Yearly report</span>
+                        </label>
+                    </p>
+
+                </form>
+                <div class="row">
+                    <div class="col l6 m6 s6 left-align">
+                        <h6>Custom Settings</h6>
                     </div>
+                    <div class="col l6 m6 s6 right-align">
+                        <button class="btn waves-effect waves-light btn-small" id="btn_AddCustomParam" type="button" name="action">
+                            <i class="material-icons ">add</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l12 m12 s12" id="PanelCustomParam">
+                        <!--<div class="row">
+            <div class=" input-field col l3 m3 s3">
+                <input id="FromDate" type="text" class="datepicker">
+                <label for="FromDate">From Date</label>
+            </div>
+            <div class="input-field col l3 m3 s3">
+                <input id="FromDate" type="text" class="datepicker">
+                <label for="FromDate">To Date</label>
+            </div>
+            <div class="col l5 m5 s5">
+                <div class="input-field col l3 m3 s3">
+                    <label>                                                                 <input type="checkbox">                                           <span>default</span>                                            </label>
+                </div>
+                <div class="input-field col  l9 m9 s9">
+                    <input id="FromDate" type="text" class="datepicker">
+                    <label for="FromDate">Email Datetime</label>
+                </div>
+            </div>
+            <div class="col l1 m1 s1 center-align ">
+                <button class="btn waves-effect waves-light btn-small" id="btn_ClearCustomParam" type="button" name="action">
+                    <i class="material-icons ">close</i>
+                </button>
+            </div>
+            </div>-->
 
+                    </div>
                 </div>
-            </details>
-            <details>
-                <summary>
-                    <ul>
-                        <li>Location</li>
-                        <li class="titleValue">Barbados</li>
-                        <li></li>
-                    </ul>
-                </summary>
-                <div class="content">
-                    <p>Result not found</p>
-                </div>
-            </details>
-            <details>
-                <summary>
-                    <ul>
-                        <li>Start and end dates</li>
-                        <li class="titleValue"><time>Start Date:</time> Feb 29,
-                            2016</li>
-                        <li class="titleValue"><time>End Date:</time> Not set</li>
-                    </ul>
-                </summary>
-                <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas.</p>
-                </div>
-            </details>
-            <details>
-                <summary>
-                    <ul>
-                        <li>Carrier</li>
-                        <li class="titleValue">The best cruise lines</li>
-                        <li class="titleValue"></li>
-                    </ul>
-                </summary>
-                <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas.</p>
-                </div>
-            </details>
-            <details>
-                <summary>
-                    <ul>
-                        <li>Meal Preference <span>Optional</span></li>
-                        <li class="titleValue">Vegetarian</li>
-                        <li class="titleValue"></li>
-                    </ul>
-                </summary>
-                <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas.</p>
-                </div>
-            </details>
-        </div>
+                <div class="row">
+                    <div class="col l12 m12 s12 right-align">
+                        <a class="waves-effect waves-light btn"><i class="material-icons left">save</i>Save</a>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                    </div>
+                </div>
+            </div>
+
             
-<script>
- document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(elems, options);
-  });
+        </details>
+        <details>
+            <summary>
+                <ul>
+                    <li class="titleName">Premium Summary</li>
+                    <li class="titleValue"> Department & Branch Wise</li>
+                    <li></li>
+                </ul>
+            </summary>
+            <div class="content">
+                <h6>Default Settings</h6>
+                <form action="#">
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Daily report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Weekly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Monthly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Quaterly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Yearly report</span>
+                        </label>
+                    </p>
 
-  // Or with jQuery
+                </form>
+                <div class="row">
+                    <div class="col l6 m6 s6 left-align">
+                        <h6>Custom Settings</h6>
+                    </div>
+                    <div class="col l6 m6 s6 right-align">
+                        <button class="btn waves-effect waves-light btn-small" id="btn_AddCustomParam" type="button" name="action">
+                            <i class="material-icons ">add</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l12 m12 s12" id="PanelCustomParam">
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>
+                <ul>
+                    <li class="titleName">Premium Summary</li>
+                    <li class="titleValue">Industry Wise</li>
+                    <li></li>
+                </ul>
+            </summary>
+            <div class="content">
+                <h6>Default Settings</h6>
+                <form action="#">
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Daily report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Weekly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Monthly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Quaterly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Yearly report</span>
+                        </label>
+                    </p>
 
-  $(document).ready(function(){
-    $('.datepicker').datepicker();
-  });
-          
-          </script>
+                </form>
+                <div class="row">
+                    <div class="col l6 m6 s6 left-align">
+                        <h6>Custom Settings</h6>
+                    </div>
+                    <div class="col l6 m6 s6 right-align">
+                        <button class="btn waves-effect waves-light btn-small" id="btn_AddCustomParam" type="button" name="action">
+                            <i class="material-icons ">add</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l12 m12 s12" id="PanelCustomParam">
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>
+                <ul>
+                    <li class="titleName">Premium Summary</li>
+                    <li class="titleValue">Branch Producer Total</li>
+                    <li></li>
+                </ul>
+            </summary>
+            <div class="content">
+                <h6>Default Settings</h6>
+                <form action="#">
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Daily report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Weekly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Monthly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Quaterly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Yearly report</span>
+                        </label>
+                    </p>
 
-    </body>
+                </form>
+                <div class="row">
+                    <div class="col l6 m6 s6 left-align">
+                        <h6>Custom Settings</h6>
+                    </div>
+                    <div class="col l6 m6 s6 right-align">
+                        <button class="btn waves-effect waves-light btn-small" id="btn_AddCustomParam" type="button" name="action">
+                            <i class="material-icons ">add</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l12 m12 s12" id="PanelCustomParam">
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>
+                <ul>
+                    <li class="titleName">Premium Summary</li>
+                    <li class="titleValue">Branch , Client & Department comparison</li>
+                    <li></li>
+                </ul>
+            </summary>
+            <div class="content">
+                <h6>Default Settings</h6>
+                <form action="#">
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Daily report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Weekly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Send Monthly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Quaterly report</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Send Yearly report</span>
+                        </label>
+                    </p>
+
+                </form>
+                <div class="row">
+                    <div class="col l6 m6 s6 left-align">
+                        <h6>Custom Settings</h6>
+                    </div>
+                    <div class="col l6 m6 s6 right-align">
+                        <button class="btn waves-effect waves-light btn-small" id="btn_AddCustomParam" type="button" name="action">
+                            <i class="material-icons ">add</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l12 m12 s12" id="PanelCustomParam">
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.datepicker');
+            //var instances = M.Datepicker.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+        });
+
+        var elem = 
+            " <div class='row'>                                                       "+
+            "<div class='input-field col l3 m3 s3'>                                "+
+            "    <input id='FromDate' type='text' class='datepicker'>                 "+
+            "        <label for='FromDate'>From Date</label>                          "+
+            "            </div>                                                       "+
+            "    <div class='input-field col l3 m3 s3'>                               "+
+            "        <input id='FromDate' type='text' class='datepicker'>             "+
+            "            <label for='FromDate'>To Date</label>                        "+
+            "            </div>                                                       "+
+            "        <div class='col l5 m5 s5'>                                       "+
+            "            <div class='input-field col l4 m4 s4'>                       "+
+            "                <label class='defaultemailtime'>                         "+
+            "<input type = 'checkbox'> <span>default</span> </label>                  "+
+            "                </div>                                                   "+
+            "                <div class='input-field col  l8 m8 s8'>                  "+
+            "                    <input id='emailDateTime' type='text' class='datepicker'> "+
+            "                        <label for='emailDateTime'>Email Datetime</label>     "+
+            "                </div>                                                   "+
+            "                </div>                                                   "+
+            "                <div class='col l1 m1 s1 center-align '>                 "+
+            "                    <button class='btn waves-effect waves-light btn-small' id='btn_ClearCustomParam' type='button' name='action'> " +
+            "                        <i class='material-icons '>close</i>             "+
+            "                    </button> " + 
+            "                </div> " +
+            "            </div> ";
+
+        $('#btn_AddCustomParam').on('click', function () {
+            $('#PanelCustomParam').append(elem);
+            $('.datepicker').datepicker();
+
+        });
+
+
+
+
+    </script>
+
+</body>
 </html>
